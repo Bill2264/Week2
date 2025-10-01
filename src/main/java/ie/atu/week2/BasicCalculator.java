@@ -1,4 +1,12 @@
 package ie.atu.week2;
 
 public class BasicCalculator {
+    public BasicCalculator() {
+    }
+
+    //adds two numbers together
+    public int add(int FirstNum, int SecondNum)
+    {
+        return FirstNum + SecondNum;
+    }
 }
