@@ -16,4 +16,9 @@ public class BasicCalculator {
         return FirstNumb - SecondNum;
     }
 
+    //multiply two number
+    public int multiply(int FirstNumb, int SecondNum)
+    {
+        return FirstNumb * SecondNum;
+    }
 }
