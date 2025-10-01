@@ -49,6 +49,15 @@ public class BasicCalculator {
     //returns a with remainder after divided by b
     public int modulo(int FirstNum, int SecondNum )
     {
-        return FirstNum % SecondNum;
+        //ensure not dividing by zero
+        if(SecondNum != 0)
+        {
+            return FirstNum % SecondNum;
+        }
+        else
+        {
+            System.out.println("Cannot Divide by 0");
+            return 0;
+        }
     }
 }
