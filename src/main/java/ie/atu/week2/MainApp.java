@@ -30,6 +30,8 @@ public class MainApp {
 
             case "multiply" -> calc.multiply(FirstNumber,SecondNumber);
 
+            case "divide" -> calc.divide(FirstNumber, SecondNumber);
+
             default -> {
                 System.out.println("invalid input");
                 yield 0;
