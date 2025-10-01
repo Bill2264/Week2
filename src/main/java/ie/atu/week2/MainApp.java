@@ -21,7 +21,7 @@ public class MainApp {
         BasicCalculator calc = new BasicCalculator();
 
         //user inputs desired operation
-        System.out.println("Choose operation (add,subtract, multiply): ");
+        System.out.println("Choose operation (add,subtract, multiply, divide): ");
         String operation = scan.next();
         int result= switch (operation) {
             case "add" -> calc.add(FirstNumber, SecondNumber);
