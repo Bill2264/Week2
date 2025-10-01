@@ -9,4 +9,11 @@ public class BasicCalculator {
     {
         return FirstNum + SecondNum;
     }
+
+    //subtract two numbers
+    public int sub(int FirstNumb, int SecondNum)
+    {
+        return FirstNumb - SecondNum;
+    }
+
 }
