@@ -17,8 +17,25 @@ public class MainApp {
         System.out.println("Please input Second number: ");
         int SecondNumber = scan.nextInt();
 
-        BasicCalculator clac = new BasicCalculator();
-        int result = clac.add(FirstNumber, SecondNumber);
+        //creates Calculator object
+        BasicCalculator calc = new BasicCalculator();
+
+        //user inputs desired operation
+        System.out.println("Choose operation (add,subtract): ");
+        String operation = scan.next();
+        int result= switch (operation) {
+            case "add" -> calc.add(FirstNumber, SecondNumber);
+
+            case "subtract" -> calc.sub(FirstNumber, SecondNumber);
+
+            default -> {
+                System.out.println("invalid input");
+                yield 0;
+            }
+
+        };
+
+        //print results
         System.out.println("Results: "+result);
     }
 }
