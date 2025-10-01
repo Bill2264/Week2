@@ -1,5 +1,7 @@
 package ie.atu.week2;
 
+import static java.lang.Math.*;
+
 
 
 public class BasicCalculator {
@@ -37,5 +39,16 @@ public class BasicCalculator {
             System.out.println("Cannot Divide by 0");
             return 0;
         }
+    }
+    //raises the base by the exponent
+    public double power(int base, int exponent)
+    {
+        return pow(base, exponent);
+    }
+
+    //returns a with remainder after divided by b
+    public int modulo(int FirstNum, int SecondNum )
+    {
+        return FirstNum % SecondNum;
     }
 }
