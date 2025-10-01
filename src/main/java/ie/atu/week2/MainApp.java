@@ -21,12 +21,14 @@ public class MainApp {
         BasicCalculator calc = new BasicCalculator();
 
         //user inputs desired operation
-        System.out.println("Choose operation (add,subtract): ");
+        System.out.println("Choose operation (add,subtract, multiply): ");
         String operation = scan.next();
         int result= switch (operation) {
             case "add" -> calc.add(FirstNumber, SecondNumber);
 
             case "subtract" -> calc.sub(FirstNumber, SecondNumber);
+
+            case "multiply" -> calc.multiply(FirstNumber,SecondNumber);
 
             default -> {
                 System.out.println("invalid input");
