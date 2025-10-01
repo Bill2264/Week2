@@ -21,9 +21,9 @@ public class MainApp {
         BasicCalculator calc = new BasicCalculator();
 
         //user inputs desired operation
-        System.out.println("Choose operation (add,subtract, multiply, divide): ");
+        System.out.println("Choose operation (add,subtract, multiply, divide, power, modulo): ");
         String operation = scan.next();
-        int result= switch (operation) {
+        double result= switch (operation) {
             case "add" -> calc.add(FirstNumber, SecondNumber);
 
             case "subtract" -> calc.sub(FirstNumber, SecondNumber);
@@ -31,6 +31,10 @@ public class MainApp {
             case "multiply" -> calc.multiply(FirstNumber,SecondNumber);
 
             case "divide" -> calc.divide(FirstNumber, SecondNumber);
+
+            case "power" -> calc.power(FirstNumber,SecondNumber);
+
+            case "modulo" -> calc.modulo(FirstNumber, SecondNumber);
 
             default -> {
                 System.out.println("invalid input");
